@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mateja cake´s world</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Cake world</h2>
+            <div class="toggle"></div>
+        </header>
+    
+
+        <video src="video(1).mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>About me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos, deleniti accusamus officiis aperiam libero facilis modi rem excepturi totam similique quibusdam porro provident temporibus saepe. Ab consectetur praesentium repellendus placeat? Doloremque fugiat, harum voluptates sit expedita corporis! Aspernatur, necessitatibus. Soluta quam molestiae fugit dolor, nostrum perspiciatis harum, est ea facere aperiam eos. Aspernatur voluptates, similique atque quos hic incidunt recusandae magni iure pariatur totam quia cum delectus dolorem! Distinctio, nulla deleniti quos corporis ab excepturi ea unde sint reprehenderit esse debitis, deserunt soluta eveniet provident explicabo vero! Doloribus illum odio perspiciatis, similique culpa atque ducimus reprehenderit earum expedita porro.</p>
+        </div>
+
+        <ul class="social"> 
+            <li><a href="www.facebook.com"></a><img src="facebook1.png" alt="Facebook"></li>
+            <li><a href="www.instagram.com"></a><img src="instagram.png" alt="Instagram"></li>
+            <li><a href="www.youtube.com"></a><img src="youtube.png" alt="Youtube"></li>  
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector(".toggle")
+        const showcase = document.querySelector(".showcase")
+
+        menuToggle.addEventListener("click", () => {
+            menuToggle.classList.toggle("active")
+            showcase.classList.toggle("active")
+        })
+    </script>
+</body>
+</html>

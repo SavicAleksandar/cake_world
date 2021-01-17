@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mateja cake´s world</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Cake world</h2>
+            <div class="toggle"></div>
+        </header>
+    
+
+        <video src="video(1).mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring New Recipes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nesciunt vero reiciendis aliquam dolore dolorum, illum laborum 
+            maxime autem nisi odit mollitia accusamus itaque saepe possimus pariatur 
+            quo delectus accusantium commodi?</p>
+            <a href="news.html">Explore</a>
+        </div>
+
+        <ul class="social"> 
+            <li><a href="www.facebook.com"></a><img src="facebook1.png" alt="Facebook"></li>
+            <li><a href="www.instagram.com"></a><img src="instagram.png" alt="Instagram"></li>
+            <li><a href="www.youtube.com"></a><img src="youtube.png" alt="Youtube"></li>  
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector(".toggle")
+        const showcase = document.querySelector(".showcase")
+
+        menuToggle.addEventListener("click", () => {
+            menuToggle.classList.toggle("active")
+            showcase.classList.toggle("active")
+        })
+    </script>
+</body>
+</html>
